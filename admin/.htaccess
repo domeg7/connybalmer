@@ -1,0 +1,7 @@
+# Schützt die Konfigurationsdatei vor direktem Zugriff
+<Files "config.php">
+  Require all denied
+</Files>
+
+# Verhindert Directory-Listing
+Options -Indexes
