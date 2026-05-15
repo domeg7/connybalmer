@@ -20,25 +20,6 @@
   <body>
     <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
-    <div class="announce" role="region" aria-label="Kontakt">
-      <div class="container announce__inner">
-        <span class="announce__item">
-          <svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
-          Steinmätteli 15, CH-3855 Brienz
-        </span>
-        <span class="announce__divider" aria-hidden="true"></span>
-        <a class="announce__item announce__link" href="tel:+41795105041">
-          <svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14"><path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24a11.36 11.36 0 0 0 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1a11.36 11.36 0 0 0 .57 3.57a1 1 0 0 1-.24 1.02l-2.21 2.2Z"/></svg>
-          079 510 50 41
-        </a>
-        <span class="announce__divider" aria-hidden="true"></span>
-        <a class="announce__item announce__link" href="mailto:physio-balmer@bluewin.ch">
-          <svg viewBox="0 0 24 24" aria-hidden="true" width="14" height="14"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4l-8 5l-8-5V6l8 5l8-5v2Z"/></svg>
-          physio-balmer@bluewin.ch
-        </a>
-      </div>
-    </div>
-
     <header class="site-header" id="top">
       <div class="container site-header__inner">
         <a class="brand" href="index.html" aria-label="Physiotherapie Conny Balmer – Startseite">
@@ -47,15 +28,15 @@
 
         <nav class="nav" aria-label="Hauptnavigation">
           <ul class="nav__list">
-            <li><a href="index.html#about">Über mich</a></li>
+            <li><a href="/uber-mich" data-page="Über mich">Über mich</a></li>
             <li><a href="angebot.html" aria-current="page">Angebot</a></li>
-            <li><a href="index.html#courses">Kurse</a></li>
-            <li><a href="index.html#praxis">Praxis</a></li>
-            <li><a href="index.html#contact">Kontakt</a></li>
+            <li><a href="/kurse" data-page="Kurse">Kurse</a></li>
+            <li><a href="/praxis" data-page="Praxis">Praxis</a></li>
+            <li><a href="/kontakt" data-page="Kontakt">Kontakt</a></li>
           </ul>
         </nav>
 
-        <a class="btn btn--primary nav__cta" href="index.html#contact">Termin vereinbaren</a>
+        <a class="btn btn--primary nav__cta" href="/kontakt" data-page="Kontakt">Termin vereinbaren</a>
 
         <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
           <span></span><span></span><span></span>
@@ -63,12 +44,12 @@
       </div>
       <div class="nav__mobile" id="navMobile" aria-hidden="true">
         <ul>
-          <li><a href="index.html#about">Über mich</a></li>
+          <li><a href="/uber-mich" data-page="Über mich">Über mich</a></li>
           <li><a href="angebot.html">Angebot</a></li>
-          <li><a href="index.html#courses">Kurse</a></li>
-          <li><a href="index.html#praxis">Praxis</a></li>
-          <li><a href="index.html#contact">Kontakt</a></li>
-          <li><a class="btn btn--primary" href="index.html#contact">Termin vereinbaren</a></li>
+          <li><a href="/kurse" data-page="Kurse">Kurse</a></li>
+          <li><a href="/praxis" data-page="Praxis">Praxis</a></li>
+          <li><a href="/kontakt" data-page="Kontakt">Kontakt</a></li>
+          <li><a class="btn btn--primary" href="/kontakt" data-page="Kontakt">Termin vereinbaren</a></li>
         </ul>
       </div>
     </header>
@@ -79,11 +60,6 @@
         <div class="page-hero__bg" aria-hidden="true"></div>
         <div class="container page-hero__grid">
           <div class="page-hero__copy">
-            <nav class="breadcrumb" aria-label="Breadcrumb">
-              <a href="index.html">Start</a>
-              <span aria-hidden="true">›</span>
-              <span>Angebot</span>
-            </nav>
             <span class="eyebrow">Angebot</span>
             <h1>Behandlungen, <em>massgeschneidert</em> für Sie.</h1>
             <p class="lead">
@@ -107,27 +83,29 @@
 
       <!-- PRICE BANNER -->
       <section class="price-banner">
-        <div class="container price-banner__inner">
-          <div class="price-banner__intro">
-            <span class="eyebrow">Massage</span>
-            <h2>Klassische & Sport­massage – ohne Verordnung.</h2>
-            <p>
-              Buchbar als Selbstzahlerleistung – ideal zur Regeneration,
-              Entspannung oder Vorbeugung von Verspannungen.
-            </p>
-          </div>
-          <div class="price-banner__prices">
-            <div class="price-tile">
-              <span class="price-tile__time">30 Minuten</span>
-              <span class="price-tile__amount">CHF 70</span>
+        <div class="container">
+          <div class="price-banner__inner">
+            <div class="price-banner__intro">
+              <span class="eyebrow">Massage</span>
+              <h2>Klassische & Sport­massage – ohne Verordnung.</h2>
+              <p>
+                Auch buchbar als Selbstzahler ohne ärztliche Verordnung – ideal zur Regeneration,
+                Entspannung oder Vorbeugung von Verspannungen.
+              </p>
             </div>
-            <div class="price-tile price-tile--accent">
-              <span class="price-tile__time">60 Minuten</span>
-              <span class="price-tile__amount">CHF 140</span>
+            <div class="price-banner__prices">
+              <div class="price-tile">
+                <span class="price-tile__time">30 Minuten</span>
+                <span class="price-tile__amount">CHF 70</span>
+              </div>
+              <div class="price-tile price-tile--accent">
+                <span class="price-tile__time">60 Minuten</span>
+                <span class="price-tile__amount">CHF 140</span>
+              </div>
+              <a class="btn btn--primary btn--full" href="tel:+41795105041">
+                Termin anfragen
+              </a>
             </div>
-            <a class="btn btn--primary btn--full" href="tel:+41795105041">
-              Termin anfragen
-            </a>
           </div>
         </div>
       </section>
